@@ -1,0 +1,22 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+slider {
+    z-index:10;
+}
+article {
+    padding:10px;
+}
+
+section {
+    padding:10px;
+    min-height:400px;
+
+}
+
+figure {
+    width:400px;
+    float:right;
+    padding:10px;
+}

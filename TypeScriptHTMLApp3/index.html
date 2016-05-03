@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>A History of Matter</title>
+    <link rel="stylesheet" href="lib/css/app.css" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/style.css">
+    <script src="lib/scripts/jquery-1.11.3.min.js"></script>
+    <script src="lib/scripts/bootstrap.min.js"></script>
+    <script src="lib/scripts/generic.js"></script>
+    <script src="Democritus/local_content.js"></script>
+    <script src="Dalton/local_content.js"></script>
+
+
+
+    <!--<script src="lib/scripts/app.js"></script>-->
+</head>
+<body>
+    <div id="slide-panel" class="slider">
+        <!--Slider Button-->
+        <a href="#" class="btn btn-danger" id="opener"><i class="glyphicon glyphicon-chevron-right"></i></a>
+        <!--The actual content-->
+        <ul class="nav nav-pills nav-stacked">
+            <!--<li role="presentation" class="active"><a data-target="#" data-toggle="pill" href="#accounts">Accounts</a></li>
+            <li role="presentation"><a data-target="#" data-toggle="pill" href="#contacts">Contacts</a></li>-->
+            <li role="presentation" class="active"><a data-toggle="pill" href="#" class="picker" data="Democritus">Democritus 350 BC</a></li>
+            <li role="presentation"><a data-toggle="pill" href="#" class="picker" data="Dalton">Dalton 1804</a></li>
+        </ul>
+        <br />
+        <br />
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-0 col-md-2"></div>
+            <article class="col-sm-12 col-md-6">
+                <figure>
+                    <img id="imgContent" class="imgContent" alt="other info" />
+                </figure>
+
+                <section>
+                    <p id="pWords"> </p>
+                </section>
+
+                <div class="divNavigator">
+                    <input id="navPrev" class='btn-default' value="Previous" type="button" />
+                    <input id="navNext" class='btn-default' style="float:right" value="Next" type="button" />
+                </div>
+            </article>
+        </div>
+    </div>
+                <script type="text/javascript">
+                    window.onload = function () {
+                        var obj = Democritus.initInfoArray();
+                        init(obj);
+                    }
+                </script>
+</body>
+</html>
+
