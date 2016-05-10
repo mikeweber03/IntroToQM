@@ -1,72 +1,78 @@
-var currentIndex;
+//var currentIndex;
 
-var infoArray = [];
-var name;
+//var infoArray = [];
+//var name;
 
 function init(_obj) {
  
-    $("#navPrev").click(function () {
-        goToPrevStep();
+    //$("#navPrev").click(function () {
+    //    goToPrevStep();
+    //});
+
+    //$("#navNext").click(function () {
+    //    goToNextStep();
+    //});
+
+    //$(".picker").click(function (e) {
+    //    var _data = $(this).attr("data");
+    //    var obj = {};
+    //    if (_data == "Dalton") {
+    //        obj = Dalton.initInfoArray();
+    //    }
+    //    if (_data == "Democritus") {
+    //        obj = Democritus.initInfoArray();
+    //    }
+    //    initScreen(obj);
+    //})
+
+    //initScreen(_obj);
+}
+
+function initScreen(_page) {
+    //$("#content").load("Dalton/page1.html", function () {
+    $("#content").load(_page, function () {
+            //alert("Load was performed.");
     });
 
-    $("#navNext").click(function () {
-        goToNextStep();
-    });
 
-    $(".picker").click(function (e) {
-        var _data = $(this).attr("data");
-        var obj = {};
-        if (_data == "Dalton") {
-            obj = Dalton.initInfoArray();
-        }
-        if (_data == "Democritus") {
-            obj = Democritus.initInfoArray();
-        }
-        initScreen(obj);
-    })
+    //infoArray = _obj.infoArray;
+    //name = _obj.name;
+    //$('.navbar-brand').html(name);
 
-    initScreen(_obj);
+    //currentIndex = 0;
+    //genericStep();
 }
 
-function initScreen(_obj) {
-    infoArray = _obj.infoArray;
-    name = _obj.name;
-    $('.navbar-brand').html(name);
+//function genericStep() {
+//    $("#imgContent").attr("src", "");
+//    var pWords = $("#pWords");
+//    pWords.empty();
+//    pWords.append(infoArray[currentIndex].words);
 
-    currentIndex = 0;
-    genericStep();
-}
+//    $("#navPrev").hide();
+//    $("#navNext").hide();
+//    if (!infoArray[currentIndex].isLast) {
+//        $("#navNext").show();
+//    }
+//    if (!infoArray[currentIndex].isFirst) {
+//        $("#navPrev").show();
+//    }
+//    if (infoArray[currentIndex].imageSrc) {
+//        $("figure").show();
+//        $("#imgContent").attr("src", infoArray[currentIndex].imageSrc);
+//    }
+//    else {
+//        $("figure").hide();
+//    }
+//}
 
-function genericStep() {
-    $("#imgContent").attr("src", "");
-    var pWords = $("#pWords");
-    pWords.empty();
-    pWords.append(infoArray[currentIndex].words);
+//function goToNextStep() {
+//    currentIndex++;
+//    genericStep();
+//}
 
-    $("#navPrev").hide();
-    $("#navNext").hide();
-    if (!infoArray[currentIndex].isLast) {
-        $("#navNext").show();
-    }
-    if (!infoArray[currentIndex].isFirst) {
-        $("#navPrev").show();
-    }
-    if (infoArray[currentIndex].imageSrc) {
-        $("figure").show();
-        $("#imgContent").attr("src", infoArray[currentIndex].imageSrc);
-    }
-    else {
-        $("figure").hide();
-    }
-}
-
-function goToNextStep() {
-    currentIndex++;
-    genericStep();
-}
-
-function goToPrevStep() {
-    currentIndex--;
-    genericStep();
-}
+//function goToPrevStep() {
+//    currentIndex--;
+//    genericStep();
+//}
 
