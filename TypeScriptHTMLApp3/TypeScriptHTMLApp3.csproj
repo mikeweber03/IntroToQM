@@ -22,29 +22,32 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Dalton\img\animation1.gif" />
-    <Content Include="Dalton\img\animation2.gif" />
-    <Content Include="Dalton\img\animation3.gif" />
-    <Content Include="Dalton\img\animation4.gif" />
-    <Content Include="Dalton\img\animation5.gif" />
-    <Content Include="Dalton\page4.html" />
-    <Content Include="Dalton\page5.html" />
-    <Content Include="Dalton\page6.html" />
-    <Content Include="Dalton\page3.html" />
-    <Content Include="Dalton\page2.html" />
-    <Content Include="Dalton\page1.html" />
-    <Content Include="Democritus\img\animation1.gif" />
-    <Content Include="Democritus\img\animation2.gif" />
-    <Content Include="Democritus\img\animation3.gif" />
-    <Content Include="Democritus\page1.html" />
-    <Content Include="Democritus\page2.html" />
-    <Content Include="Democritus\page3.html" />
+    <Content Include="Content\Bohr\page1.html" />
+    <Content Include="Content\Dalton\img\animation1.gif" />
+    <Content Include="Content\Dalton\img\animation2.gif" />
+    <Content Include="Content\Dalton\img\animation3.gif" />
+    <Content Include="Content\Dalton\img\animation4.gif" />
+    <Content Include="Content\Dalton\img\animation5.gif" />
+    <Content Include="Content\Dalton\page4.html" />
+    <Content Include="Content\Dalton\page5.html" />
+    <Content Include="Content\Dalton\page6.html" />
+    <Content Include="Content\Dalton\page3.html" />
+    <Content Include="Content\Dalton\page2.html" />
+    <Content Include="Content\Dalton\page1.html" />
+    <Content Include="Content\Democritus\img\animation1.gif" />
+    <Content Include="Content\Democritus\img\animation2.gif" />
+    <Content Include="Content\Democritus\img\animation3.gif" />
+    <Content Include="Content\Democritus\page1.html" />
+    <Content Include="Content\Democritus\page2.html" />
+    <Content Include="Content\Democritus\page3.html" />
     <Content Include="lib\css\app.css" />
     <Content Include="index.html" />
     <Content Include="lib\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="lib\scripts\bootstrap.min.js" />
     <Content Include="lib\scripts\generic.js" />
     <Content Include="lib\scripts\jquery-1.11.3.min.js" />
+    <Content Include="Content\Nagaoka\img\animation1.gif" />
+    <Content Include="Content\Nagaoka\page1.html" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -62,7 +65,9 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Content\Bohr\img\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>
