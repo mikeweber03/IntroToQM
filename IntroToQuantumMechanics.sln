@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeScriptHTMLApp3", "TypeScriptHTMLApp3\TypeScriptHTMLApp3.csproj", "{93F2FC5E-449F-474D-A677-C854C67CE6B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToQuantumMechanics", "TypeScriptHTMLApp3\IntroToQuantumMechanics.csproj", "{93F2FC5E-449F-474D-A677-C854C67CE6B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
